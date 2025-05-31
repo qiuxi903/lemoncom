@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻动态 - 社区官网</title>
+    <link rel="icon" href="images/lh.png" type="image/x-icon"> <!-- 在网页标题左侧显示图标 -->
+    <link rel="shortcut icon" href="images/lh.png" type="image/x-icon"> <!-- 在收藏夹显示图标 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/news-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏与其他页面相同 -->
+    <header class="header">
+        <!-- 相同的导航栏内容 -->
+    </header>
+
+    <main>
+        <article class="news-detail">
+            <div class="container">
+                <div class="news-header">
+                    <h1 id="newsTitle"></h1>
+                    <div class="news-meta">
+                        <span class="news-category" id="newsCategory"></span>
+                        <span class="news-date" id="newsDate"></span>
+                    </div>
+                </div>
+                
+                <div class="news-content">
+                    <div class="news-image">
+                        <img id="newsImage" src="" alt="">
+                    </div>
+                    <div class="news-text" id="newsContent">
+                        <!-- 新闻内容将通过JavaScript动态加载 -->
+                    </div>
+                </div>
+
+                <div class="news-navigation">
+                    <a href="#" class="prev-news" id="prevNews">
+                        <i class="fas fa-arrow-left"></i>
+                        上一篇
+                    </a>
+                    <a href="news.html" class="back-to-list">
+                        返回列表
+                    </a>
+                    <a href="#" class="next-news" id="nextNews">
+                        下一篇
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- 页脚与其他页面相同 -->
+    <footer class="footer">
+        <!-- 相同的页脚内容 -->
+    </footer>
+
+    <script src="js/newsData.js"></script>
+    <script src="js/newsDetail.js"></script>
+</body>
+</html> 

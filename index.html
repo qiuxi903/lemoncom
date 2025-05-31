@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>柠檬社区</title>
+    <link rel="icon" href="images/nm.png" type="image/x-icon"> <!-- 在网页标题左侧显示图标 -->
+    <link rel="shortcut icon" href="images/nm.png" type="image/x-icon"> <!-- 在收藏夹显示图标 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/home.css">
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="社区logo">
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="/">首页</a>
+                <a href="#about">关于我们</a>
+                <a href="#news">新闻中心</a>
+                <a href="#products">社区资源</a>
+                <a href="#subsites">子网站</a>
+                <a href="#contact">联系我们</a>
+            </div>
+
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 英雄区域 -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>柠檬社区-壹个野心很大的服务平台</h1>
+                <p class="hero-subtitle">致力于为用户提供优质服务</p>
+                <a href="#about" class="cta-button">了解更多</a>
+            </div>
+        </section>
+
+        <!-- 关于我们 -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">关于我们</h2>
+                    <p class="section-subtitle">致力于为用户提供优质服务</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>社区愿景</h3>
+                        <p class="vision-text">我们的愿望是建造一个供大多数人使用的优质社区。通过不断创新和优化，我们致力于打造一个没有负担的社区平台。</p>
+                        
+                        <div class="values-grid">
+                            <div class="value-item">
+                                <i class="fas fa-lightbulb"></i>
+                                <h4>创新</h4>
+                                <p>以创新驱动发展，引领行业技术革新</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="fas fa-award"></i>
+                                <h4>创优</h4>
+                                <p>追求卓越品质，打造精品资源</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="fas fa-handshake"></i>
+                                <h4>创信</h4>
+                                <p>诚信经营，构建可信赖平台</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="fas fa-rocket"></i>
+                                <h4>创业</h4>
+                                <p>开拓进取，实现共同发展</p>
+                            </div>
+                            <div class="value-item">
+                                <i class="fas fa-palette"></i>
+                                <h4>创意</h4>
+                                <p>激发创意灵感，引领游戏文化</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        
+
+        <!-- 核心服务 -->
+        <section class="section core-services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">核心服务</h2>
+                    <p class="section-subtitle">为您提供全方位的游戏服务</p>
+                </div>
+                <div class="services-container">
+                    <div class="service-card">
+                        <i class="fas fa-store"></i>
+                        <h3>Lemon社区Minecraft服务器</h3>
+                        <p>提供JAVA版Minecraft服务器</p>
+                        <p>1️⃣1.21.4为主版本的正版生存服</p>
+                        <p>2️⃣高版本离线(白名单)模组生存服</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-comments"></i>
+                        <h3>柠檬社区论坛论坛</h3>
+                        <p>玩家交流平台，分享经验，共同成长。</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-server"></i>
+                        <h3>LemonBOX-文件分享站</h3>
+                        <p>可以自己上传自己的文件，不限速的传输文件</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 产品展示 -->
+        <section id="products" class="section products-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">社区资源</h2>
+                    <p class="section-subtitle">由柠檬社区自制的资源</p>
+                </div>
+                <div class="products-grid" id="homeProducts">
+                    <!-- 产品卡片将通过JavaScript动态加载 -->
+                </div>
+                <div class="view-more">
+                    <a href="products.html" class="btn-view-more">查看更多产品</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 子网站展示 -->
+        <section id="subsites" class="section subsites-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">子网站</h2>
+                    <p class="section-subtitle">多个实用平台，满足不同需求</p>
+                </div>
+                <div class="subsites-grid">
+                    <div class="subsite-card">
+                        <div class="subsite-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>玩家论坛</h3>
+                        <p>交流经验，分享创意，结识志同道合的玩家</p>
+                        <a href="https://com.lemoncom.cn" class="visit-site">访问网站</a>
+                    </div>
+                    <div class="subsite-card">
+                        <div class="subsite-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>LemonBOX文件分享站</h3>
+                        <p>可以自己上传自己的文件，不限速的传输文件</p>
+                        <a href="https://box.lemoncom.cn" class="visit-site">访问网站</a>
+                    </div>
+                    <div class="subsite-card">
+                        <div class="subsite-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>游戏&网站连接情况检查</h3>
+                        <p>查看社区服务是否在线</p>
+                        <a href="https://uk.lemoncom.cn/status/lemoncom" class="visit-site">访问网站</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 新闻中心 -->
+        <section id="news" class="section news-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">新闻中心</h2>
+                    <p class="section-subtitle">了解最新社区动态与行业资讯</p>
+                </div>
+                <div class="news-grid" id="homeNews">
+                    <!-- 新闻将通过JavaScript动态加载 -->
+                </div>
+                <div class="view-more">
+                    <a href="news.html" class="btn-view-more">查看更多新闻</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系我们 -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">联系我们</h2>
+                    <p class="section-subtitle">随时为您提供专业支持</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fab fa-qq"></i>
+                            <h3>官方QQ群</h3>
+                            <p><a href="https://qm.qq.com/q/KV2nskz3Y4" target="_blank">点击进群</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <h3>电子邮箱</h3>
+                            <p>3687624214@qq.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>社区地址(并且管理员所在地)</h3>
+                            <p>浙江省杭州市钱塘区下沙街道</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于我们</h3>
+                <p>柠檬社区-壹个野心很大的服务平台</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#news">新闻中心</a></li>
+                    <li><a href="#products">产品展示</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>联系方式</h3>
+                <ul>
+                    <li><i class="fab fa-qq"></i> <a href="https://qm.qq.com/q/KV2nskz3Y4" target="_blank">加入Q群</a></li>
+                    <li><i class="fas fa-envelope"></i> 3687624214@qq.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>关注我们</h3>
+                <div class="social-links">
+                    <a href="https://space.bilibili.com/3537116868905415?spm_id_from=333.337.0.0"><i class="fab fa-bilibili"></i></a>
+                    <a href="https://qm.qq.com/q/KV2nskz3Y4"><i class="fab fa-qq"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 <a href="https://www.lemoncom.cn" target="_blank">柠檬社区</a>. 保留所有权利.</p>
+            <div class="beian-info">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/productData.js"></script>
+    <script src="js/productRenderer.js"></script>
+    <script src="js/newsData.js"></script>
+    <script src="js/newsRenderer.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社区资源 - 社区官网</title>
+    <link rel="icon" href="images/lh.png" type="image/x-icon"> <!-- 在网页标题左侧显示图标 -->
+    <link rel="shortcut icon" href="images/lh.png" type="image/x-icon"> <!-- 在收藏夹显示图标 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/products-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="社区logo">
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="/">首页</a>
+                <a href="index.html#about">关于我们</a>
+                <a href="index.html#news">新闻动态</a>
+                <a href="products.html" class="active">社区资源</a>
+                <a href="index.html#subsites">子网站</a>
+                <a href="index.html#contact">联系我们</a>
+            </div>
+
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 页面标题 -->
+        <section class="page-header">
+            <h1>社区资源</h1>
+            <p>由柠檬社区自制的资源</p>
+        </section>
+
+        <!-- 产品筛选 -->
+        <section class="products-section">
+            <div class="container">
+                <div class="filters">
+                    <div class="filter-group">
+                        <select class="category-filter">
+                            <option value="">所有类别</option>
+                            <option value="fl1">服务器插件</option>
+                            <option value="fl2">自制软件</option>
+                            <option value="fl3">其他</option>
+                        </select>
+                        <select class="price-filter">
+                            <option value="">价格排序</option>
+                            <option value="low">从低到高</option>
+                            <option value="high">从高到低</option>
+                        </select>
+                    </div>
+                    <div class="search-filter">
+                        <input type="text" placeholder="搜索产品...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+                <div class="products-grid" id="allProducts">
+                    <!-- 产品卡片将通过JavaScript动态加载 -->
+                </div>
+
+                <!-- 分页 -->
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <span>...</span>
+                    <a href="#">10</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于我们</h3>
+                <p>柠檬社区-壹个野心很大的服务平台</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#news">新闻中心</a></li>
+                    <li><a href="#products">产品展示</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>联系方式</h3>
+                <ul>
+                    <li><i class="fab fa-qq"></i> <a href="https://qm.qq.com/q/KV2nskz3Y4" target="_blank">加入Q群</a></li>
+                    <li><i class="fas fa-envelope"></i> 3687624214@qq.com</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>关注我们</h3>
+                <div class="social-links">
+                    <a href="https://space.bilibili.com/3537116868905415?spm_id_from=333.337.0.0"><i class="fab fa-bilibili"></i></a>
+                    <a href="https://qm.qq.com/q/KV2nskz3Y4"><i class="fab fa-qq"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 <a href="https://www.lemoncom.cn" target="_blank">柠檬社区</a>. 保留所有权利.</p>
+            <div class="beian-info">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/productData.js"></script>
+    <script src="js/productRenderer.js"></script>
+    <script src="js/newsData.js"></script>
+    <script src="js/newsRenderer.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻动态 - 社区官网</title>
+    <link rel="icon" href="images/lh.png" type="image/x-icon"> <!-- 在网页标题左侧显示图标 -->
+    <link rel="shortcut icon" href="images/lh.png" type="image/x-icon"> <!-- 在收藏夹显示图标 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/news-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="公司logo">
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="/">首页</a>
+                <a href="index.html#about">关于我们</a>
+                <a href="news.html" class="active">新闻中心</a>
+                <a href="products.html">产品展示</a>
+                <a href="index.html#subsites">子网站展示</a>
+                <a href="index.html#contact">联系我们</a>
+            </div>
+
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="news-page">
+        <!-- 页面标题 -->
+        <section class="page-header">
+            <h1>新闻中心</h1>
+            <p>了解最新社区动态与行业资讯</p>
+        </section>
+
+        <!-- 新闻内容 -->
+        <section class="news-section">
+            <div class="container">
+                <!-- 新闻分类 -->
+                <div class="news-categories">
+                    <button class="category-btn active" data-category="all">全部</button>
+                    <button class="category-btn" data-category="company">公司新闻</button>
+                    <button class="category-btn" data-category="industry">行业动态</button>
+                    <button class="category-btn" data-category="product">产品更新</button>
+                </div>
+
+                <!-- 新闻列表 -->
+                <div class="news-grid" id="newsGrid">
+                    <!-- 新闻将通过JavaScript动态加载 -->
+                </div>
+
+                <!-- 分页 -->
+                <div class="pagination">
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <span>...</span>
+                    <a href="#">10</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <!-- 与其他页面相同的页脚内容 -->
+    </footer>
+
+    <script src="js/newsData.js"></script>
+    <script src="js/newsRenderer.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/news.js"></script>
+</body>
+</html> 
